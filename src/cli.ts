@@ -41,9 +41,9 @@ async function runInteractive(): Promise<void> {
       message: 'Skills disponiveis',
       pageSize: 15,
       choices: SKILLS.map((skill) => ({
-        name: `${skill.name}  [${getSourceLabel(skill)}]`,
+        name: `${skill.displayName}  (${getSourceLabel(skill)})`,
         value: skill.name,
-        short: skill.name,
+        short: skill.displayName,
       })),
     },
   ]);
@@ -58,7 +58,7 @@ async function runInteractive(): Promise<void> {
   console.log('');
   console.log(`\x1b[1mSkills selecionadas (${chosen.length}):\x1b[0m`);
   for (const skill of chosen) {
-    console.log(`  - \x1b[36m${skill.name}\x1b[0m  (${getSourceLabel(skill)})`);
+    console.log(`  - \x1b[36m${skill.displayName}\x1b[0m  (${getSourceLabel(skill)})`);
   }
 
   const { confirm } = await inquirer.prompt<{ confirm: boolean }>([
@@ -82,7 +82,7 @@ async function runInteractive(): Promise<void> {
   for (let i = 0; i < chosen.length; i++) {
     const skill = chosen[i];
     const label = `[${i + 1}/${chosen.length}]`;
-    process.stdout.write(`\n${label} Instalando \x1b[36m${skill.name}\x1b[0m... `);
+    process.stdout.write(`\n${label} Instalando \x1b[36m${skill.displayName}\x1b[0m... `);
 
     const result = spawnSync(
       'npx',
@@ -99,7 +99,7 @@ async function runInteractive(): Promise<void> {
         console.log(`  \x1b[31m${result.stderr.trim().split('\n').slice(-2).join('\n')}\x1b[0m`);
       }
       fail++;
-      failedNames.push(skill.name);
+      failedNames.push(skill.displayName);
     }
   }
 

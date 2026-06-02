@@ -8,16 +8,42 @@ Collection of 11 AI agent skills covering the Java ecosystem: code quality, Spri
 
 ## Install
 
-### Via install-skills.sh (interactive, recommended)
+### Via CLI Interativa (recomendado)
+
+O comando `npx skills add ViniHDSouza/skill-java` abre um menu interativo para selecionar uma ou mais skills.
+
+```bash
+# 1. Instale a CLI globalmente
+npm install -g github:ViniHDSouza/skill-java
+
+# 2. Execute em qualquer projeto
+skills add ViniHDSouza/skill-java
+```
+
+> **Nota:** O primeiro comando (`npm install -g`) instala o binário `skills`. Isso precisa ser feito apenas uma vez. Depois, em qualquer projeto, é só rodar `skills add ViniHDSouza/skill-java` para abrir o seletor interativo.
+
+**Desenvolvimento local (sem publicar):**
+
+```bash
+git clone https://github.com/ViniHDSouza/skill-java.git
+cd skill-java
+npm install && npm run build
+npm link
+
+# Agora o comando funciona globalmente:
+skills add ViniHDSouza/skill-java
+```
+
+### Via install-skills.sh (bash)
 
 ```bash
 git clone https://github.com/ViniHDSouza/skill-java.git
 cd skill-java
 bash install-skills.sh
-# Interactive menu — pick one, several, or all (type 0)
+# Menu interativo — escolha uma, varias ou todas (digite 0)
 ```
 
-### Via `npx skills` (manual, one by one)
+### Via npx skills (manual, uma por uma)
 
 ```bash
 # Well-known skills (Smithery.ai)
