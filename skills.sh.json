@@ -29,15 +29,9 @@
     },
     {
       "title": "Architecture",
-      "description": "Enterprise architecture, DDD, reactive WebFlux, and cloud-native design.",
+      "description": "Enterprise architecture, DDD, reactive WebFlux, microservices, and cloud-native design.",
       "skills": [
-        "java-architect"
-      ]
-    },
-    {
-      "title": "Microservices",
-      "description": "Spring Cloud, resilience patterns, event-driven with Kafka, and observability.",
-      "skills": [
+        "java-architect",
         "java-microservices"
       ]
     },

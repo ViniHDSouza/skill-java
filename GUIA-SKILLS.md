@@ -27,19 +27,28 @@ java-dia-dia/
 ├── AGENTS.md              # Instruções principais (OpenCode)
 ├── CLAUDE.md              # Instruções Claude Code
 ├── GUIA-SKILLS.md         # Este guia
-├── skills-lock.json       # Lock file com hashes + plataformas
-├── skills/                # Skills (11 skills)
-│   ├── code-quality/
-│   ├── code-readability/
-│   ├── cui-java-core/
-│   ├── dr-jskill/
-│   ├── java-architect/
-│   ├── java-microservices/
-│   ├── java-pro/
-│   ├── java-spring-boot/
-│   ├── smithery-ai-cli/
-│   ├── spring-boot-engineer/
-│   └── springboot-verification/
+├── skills-lock.json       # Lock file com hashes (skills externas)
+├── skills.sh.json         # Configuração skills.sh
+├── scripts/
+│   └── postinstall.sh     # Gera symlinks em .claude/skills/ e .agents/skills/
+├── skills/                # 11 skills em 6 buckets
+│   ├── core/
+│   │   ├── code-quality/
+│   │   └── code-readability/
+│   ├── java/
+│   │   ├── cui-java-core/
+│   │   └── java-pro/
+│   ├── spring-boot/
+│   │   ├── dr-jskill/
+│   │   ├── java-spring-boot/
+│   │   └── spring-boot-engineer/
+│   ├── architecture/
+│   │   ├── java-architect/
+│   │   └── java-microservices/
+│   ├── verification/
+│   │   └── springboot-verification/
+│   └── tools/
+│       └── smithery-ai-cli/
 ├── .opencode/
 │   └── opencode.jsonc     # Config OpenCode (local-only)
 └── .vscode/
