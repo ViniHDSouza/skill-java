@@ -1,0 +1,38 @@
+{
+  "name": "skill-java",
+  "version": "1.0.0",
+  "description": "Repositorio de Skills para Desenvolvimento Java — CLI interativa para instalar skills via Smithery",
+  "license": "MIT",
+  "author": "ViniHDSouza",
+  "repository": "github:ViniHDSouza/skill-java",
+  "bin": {
+    "skills": "./dist/cli.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "inquirer": "^12.6.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "java",
+    "spring-boot",
+    "skills",
+    "ai",
+    "smithery",
+    "claude-code",
+    "opencode"
+  ]
+}
