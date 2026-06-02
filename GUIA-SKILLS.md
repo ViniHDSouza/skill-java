@@ -10,13 +10,13 @@ As skills estão configuradas para funcionar **localmente** (sem dependências e
 
 | Ferramenta | Arquivo de instruções | Skills | Config adicional |
 |------------|----------------------|--------|-----------------|
-| **Claude Code** | `CLAUDE.md` | `.agents/skills/` | — |
-| **OpenCode** | `AGENTS.md` | `.agents/skills/` | `.opencode/opencode.jsonc` |
-| **VSCode** | `.vscode/settings.json` | `.agents/skills/` (via extensões AI) | `.vscode/extensions.json` |
+| **Claude Code** | `CLAUDE.md` | `skills/` | — |
+| **OpenCode** | `AGENTS.md` | `skills/` | `.opencode/opencode.jsonc` |
+| **VSCode** | `.vscode/settings.json` | `skills/` (via extensões AI) | `.vscode/extensions.json` |
 
 ### Como cada ferramenta carrega as skills
 
-- **Claude Code**: Lê `CLAUDE.md` ao iniciar no diretório e carrega skills de `.agents/skills/`.
+- **Claude Code**: Lê `CLAUDE.md` ao iniciar no diretório e carrega skills de `skills/`.
 - **OpenCode**: Lê `AGENTS.md` + `.opencode/opencode.jsonc` e carrega skills do diretório configurado (`mode: local-only`).
 - **VSCode**: Extensões como GitHub Copilot e Continue leem instruções do workspace (`.vscode/`, `.github/copilot-instructions.md`) e podem referenciar skills locais.
 
@@ -28,7 +28,7 @@ java-dia-dia/
 ├── CLAUDE.md              # Instruções Claude Code
 ├── GUIA-SKILLS.md         # Este guia
 ├── skills-lock.json       # Lock file com hashes + plataformas
-├── .agents/skills/        # Skills (11 skills)
+├── skills/                # Skills (11 skills)
 │   ├── code-quality/
 │   ├── code-readability/
 │   ├── cui-java-core/

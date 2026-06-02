@@ -1,7 +1,7 @@
 # skill-java — Claude Code
 
 **Repositório local de Skills para Desenvolvimento Java**
-Todas as skills estao em `.agents/skills/` e funcionam localmente sem dependencias externas.
+Todas as skills estao em `skills/` e funcionam localmente sem dependencias externas.
 
 > Instrucoes completas em `AGENTS.md`. Exemplos praticos em `GUIA-SKILLS.md`.
 
@@ -9,7 +9,7 @@ Todas as skills estao em `.agents/skills/` e funcionam localmente sem dependenci
 
 ## Regras para Claude Code
 
-1. Skills estao em `.agents/skills/` — carregue o `SKILL.md` antes de gerar codigo.
+1. Skills estao em `skills/` — carregue o `SKILL.md` antes de gerar codigo.
 2. `code-quality` e `code-readability` sao transversais — aplicar SEMPRE.
 3. Consulte `GUIA-SKILLS.md` para exemplos praticos em portugues.
 4. Skills sao auto-contidas e nao dependem de fontes externas (Smithery, GitHub).
@@ -34,6 +34,6 @@ Todas as skills estao em `.agents/skills/` e funcionam localmente sem dependenci
 
 | Ferramenta | Arquivo de instrucoes | Skills |
 |------------|----------------------|--------|
-| Claude Code | `CLAUDE.md` (este) | `.agents/skills/` |
-| OpenCode | `AGENTS.md` | `.agents/skills/` |
-| VSCode | `.vscode/settings.json` | `.agents/skills/` |
+| Claude Code | `CLAUDE.md` (este) | `skills/` |
+| OpenCode | `AGENTS.md` | `skills/` |
+| VSCode | `.vscode/settings.json` | `skills/` |

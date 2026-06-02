@@ -1,9 +1,9 @@
 {
   // OpenCode workspace configuration for skill-java
-  // Skills are loaded from .agents/skills/ (local only, no external sources)
+  // Skills are loaded from skills/ (local only, no external sources)
 
   "skills": {
-    "directory": ".agents/skills",
+    "directory": "skills",
     "mode": "local-only"
   },
 
