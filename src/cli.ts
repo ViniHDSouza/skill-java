@@ -19,7 +19,7 @@ function passthroughToSmithery(): void {
   const args = process.argv.slice(2);
   const result = spawnSync(
     'npx',
-    ['--yes', '@smithery/cli', 'skills', ...args],
+    ['--yes', 'skills@latest', ...args],
     { stdio: 'inherit', shell: true }
   );
   process.exit(result.status ?? 1);
@@ -84,11 +84,11 @@ async function runInteractive(): Promise<void> {
     const label = `[${i + 1}/${chosen.length}]`;
     process.stdout.write(`\n${label} Instalando \x1b[36m${skill.displayName}\x1b[0m... `);
 
-    const result = spawnSync(
-      'npx',
-      ['--yes', '@smithery/cli', 'skills', 'add', skill.source, '--yes'],
-      { stdio: 'pipe', shell: true, encoding: 'utf-8' }
-    );
+  const result = spawnSync(
+    'npx',
+    ['--yes', 'skills@latest', 'add', skill.source, '-y'],
+    { stdio: 'pipe', shell: true, encoding: 'utf-8' }
+  );
 
     if (result.status === 0) {
       console.log('\x1b[32mOK\x1b[0m');
