@@ -1,6 +1,7 @@
 ---
 name: java-spring-boot
 description: Build production Spring Boot applications - REST APIs, Security, Data, Actuator
+platforms: [claude, opencode, vscode]
 sasmp_version: "1.3.0"
 version: "3.0.0"
 bonded_agent: 03-java-spring

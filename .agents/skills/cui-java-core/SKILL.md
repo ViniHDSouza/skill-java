@@ -2,6 +2,7 @@
 name: cui-java-core
 description: Core Java development standards for CUI projects including coding patterns, null safety, Lombok, modern features, and logging
 allowed-tools: [Read, Edit, Write, Bash, Grep, Glob]
+platforms: [claude, opencode, vscode]
 ---
 
 # CUI Java Core Development Skill

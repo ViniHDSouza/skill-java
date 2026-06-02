@@ -1,6 +1,8 @@
 ---
 name: java-pro
 description: Master Java 21+ with modern features like virtual threads, pattern matching, and Spring Boot 3.x. Expert in the latest Java ecosystem including GraalVM, Project Loom, and cloud-native patterns. Use PROACTIVELY for Java development, microservices architecture, or performance optimization.
+allowed-tools: [Read, Edit, Write, Bash, Grep, Glob, Task]
+platforms: [claude, opencode, vscode]
 source: https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/java-pro
 ---
 

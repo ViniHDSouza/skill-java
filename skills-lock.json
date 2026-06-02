@@ -1,5 +1,6 @@
 {
   "version": 1,
+  "platforms": ["claude", "opencode", "vscode"],
   "skills": {
     "code-quality": {
       "source": "smithery.ai",

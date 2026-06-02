@@ -1,6 +1,7 @@
 ---
 name: java-microservices
 description: Build microservices - Spring Cloud, service mesh, event-driven, resilience patterns
+platforms: [claude, opencode, vscode]
 sasmp_version: "1.3.0"
 version: "3.0.0"
 bonded_agent: 07-java-microservices

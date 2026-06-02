@@ -1,6 +1,8 @@
 ---
 name: dr-jskill
 description: "Creates Java + Spring Boot projects: Web applications, full-stack apps with Vue.js or Angular or React or vanilla JS, PostgreSQL, REST APIs, and Docker. Use when creating Spring Boot projects, setting up Java microservices, or building enterprise applications with the Spring Framework."
+allowed-tools: [Read, Edit, Write, Bash, Grep, Glob, Task]
+platforms: [claude, opencode, vscode]
 metadata:
   recommended_model: gpt-5.5
 ---

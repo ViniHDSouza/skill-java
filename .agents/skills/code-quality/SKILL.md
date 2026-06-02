@@ -1,6 +1,8 @@
 ---
 name: code-quality
 description: Code quality guidelines. ALWAYS use skill for ANY code changes.
+allowed-tools: [Read, Edit, Write, Grep, Glob]
+
 ---
 
 # Code Quality Guidelines
