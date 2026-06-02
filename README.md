@@ -8,28 +8,35 @@ Collection of 11 AI agent skills covering the Java ecosystem: code quality, Spri
 
 ## Install
 
-### Via `npx skills` (recommended)
+### Via install-skills.sh (interactive, recommended)
 
 ```bash
-# Install all 11 skills at once
-npx skills add ViniHDSouza/skill-java
-
-# Install only specific skills
-npx skills add ViniHDSouza/skill-java --skill code-quality
-npx skills add ViniHDSouza/skill-java --skill java-spring-boot
-npx skills add ViniHDSouza/skill-java --skill spring-boot-engineer
-
-# Install multiple skills in one command (repeat --skill)
-npx skills add ViniHDSouza/skill-java \
-  --skill code-quality \
-  --skill cui-java-core \
-  --skill java-spring-boot
-
-# Remove all skills from this repo
-npx skills remove ViniHDSouza/skill-java
+git clone https://github.com/ViniHDSouza/skill-java.git
+cd skill-java
+bash install-skills.sh
+# Interactive menu — pick one, several, or all (type 0)
 ```
 
-### Via clone (local use)
+### Via `npx skills` (manual, one by one)
+
+```bash
+# Well-known skills (Smithery.ai)
+npx skills add code-quality
+npx skills add code-readability
+npx skills add cui-java-core
+npx skills add smithery-ai-cli
+
+# GitHub skills
+npx skills add jdubois/dr-jskill
+npx skills add jeffallan/claude-skills/skills/java-architect
+npx skills add jeffallan/claude-skills/skills/spring-boot-engineer
+npx skills add pluginagentmarketplace/custom-plugin-java/skills/java-microservices
+npx skills add pluginagentmarketplace/custom-plugin-java/skills/java-spring-boot
+npx skills add sickn33/antigravity-awesome-skills/skills/java-pro
+npx skills add affaan-m/everything-claude-code/docs/zh-CN/skills/springboot-verification
+```
+
+### Via clone (local use, no Smithery CLI needed)
 
 ```bash
 git clone https://github.com/ViniHDSouza/skill-java.git
@@ -66,11 +73,8 @@ Once installed, the agent loads the skill automatically when the task matches th
 # List installed skills
 npx skills list
 
-# Update a skill to the latest version
-npx skills update ViniHDSouza/skill-java --skill java-spring-boot
-
-# Remove all skills from this repo
-npx skills remove ViniHDSouza/skill-java
+# Install more skills later — re-run the interactive script
+bash install-skills.sh
 ```
 
 ## Skills
@@ -115,6 +119,7 @@ skills/                  # 11 skill directories (SKILL.md + references)
 AGENTS.md                # Full skill catalog and usage rules
 CLAUDE.md                # Claude Code instructions
 GUIA-SKILLS.md           # Practical guide (Portuguese)
+install-skills.sh        # Interactive skill installer
 skills-lock.json         # Source tracking and integrity hashes
 skills.sh.json           # skills.sh listing customization
 ```
