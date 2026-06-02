@@ -1,68 +1,40 @@
 {
   "version": 1,
-  "platforms": ["claude", "opencode", "vscode"],
   "skills": {
-    "code-quality": {
-      "source": "smithery.ai",
-      "sourceType": "well-known",
-      "computedHash": "4a3ce293698e23fb0b19fff649b7d1f0c60e880ee8c9ecff8cd28e9f4cea2e53"
-    },
-    "code-readability": {
-      "source": "smithery.ai",
-      "sourceType": "well-known",
-      "computedHash": "e7559071d7925079ad7a65ea78da120411612828289a7907bb0426bd707d0107"
-    },
-    "cui-java-core": {
-      "source": "smithery.ai",
-      "sourceType": "well-known",
-      "computedHash": "d4e12a02df3e677fcd670b90688d5e4c865cc227132992c569a883c8c138f0f8"
-    },
     "dr-jskill": {
       "source": "jdubois/dr-jskill",
-      "sourceType": "github",
       "skillPath": "SKILL.md",
-      "computedHash": "2d2eb6253ce691e945b09e92b1a3e8bb997b17697a0de5569422fe2881fa8234"
+      "hash": "2d2eb6253ce691e945b09e92b1a3e8bb997b17697a0de5569422fe2881fa8234"
     },
     "java-architect": {
       "source": "jeffallan/claude-skills",
-      "sourceType": "github",
       "skillPath": "skills/java-architect/SKILL.md",
-      "computedHash": "7f202287a1ad819b41a9235b8bb570eed217a431e4e60d7196fd9330d52001c2"
+      "hash": "7f202287a1ad819b41a9235b8bb570eed217a431e4e60d7196fd9330d52001c2"
     },
     "java-microservices": {
       "source": "pluginagentmarketplace/custom-plugin-java",
-      "sourceType": "github",
       "skillPath": "skills/java-microservices/SKILL.md",
-      "computedHash": "d4c0c5e302e75041d4eb9bf0782110d2fd1efcdf23efe650bac3122816aa9ec4"
+      "hash": "d4c0c5e302e75041d4eb9bf0782110d2fd1efcdf23efe650bac3122816aa9ec4"
     },
     "java-pro": {
       "source": "sickn33/antigravity-awesome-skills",
-      "sourceType": "github",
       "skillPath": "skills/java-pro/SKILL.md",
-      "computedHash": "ce7bb55a88ffeadcf8731b7dbdbc711da380373cb5347bbf53ddc7dd2538d169"
+      "hash": "ce7bb55a88ffeadcf8731b7dbdbc711da380373cb5347bbf53ddc7dd2538d169"
     },
     "java-spring-boot": {
       "source": "pluginagentmarketplace/custom-plugin-java",
-      "sourceType": "github",
       "skillPath": "skills/java-spring-boot/SKILL.md",
-      "computedHash": "c1d1523ec6ead1de3c7efd73e7a6041af983ef0dc38ae2050f75c6375ba6b7ae"
-    },
-    "smithery-ai-cli": {
-      "source": "smithery.ai",
-      "sourceType": "well-known",
-      "computedHash": "dc17f090c975afe1d96a25dbe843fc9c978e96d5699eed1bb7c12b411e10b830"
+      "hash": "c1d1523ec6ead1de3c7efd73e7a6041af983ef0dc38ae2050f75c6375ba6b7ae"
     },
     "spring-boot-engineer": {
       "source": "jeffallan/claude-skills",
-      "sourceType": "github",
       "skillPath": "skills/spring-boot-engineer/SKILL.md",
-      "computedHash": "293d15785cda1eaebdce24f99a6f363be5c25390e383324df1feeda158bba10d"
+      "hash": "293d15785cda1eaebdce24f99a6f363be5c25390e383324df1feeda158bba10d"
     },
     "springboot-verification": {
       "source": "affaan-m/everything-claude-code",
-      "sourceType": "github",
       "skillPath": "docs/zh-CN/skills/springboot-verification/SKILL.md",
-      "computedHash": "579698f98690a61aa2fe7eba87d0415d6b88f421606e04cfa4bd7453be16f56b"
+      "hash": "579698f98690a61aa2fe7eba87d0415d6b88f421606e04cfa4bd7453be16f56b"
     }
   }
 }

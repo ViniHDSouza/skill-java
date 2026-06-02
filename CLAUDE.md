@@ -1,7 +1,7 @@
 # skill-java — Claude Code
 
-**Repositório local de Skills para Desenvolvimento Java**
-Todas as skills estao em `.agents/skills/` e funcionam localmente sem dependencias externas.
+**Repositorio de Skills para Desenvolvimento Java**
+Skills organizadas em buckets dentro de `skills/`. Instale todas ou escolha por bucket/skill.
 
 > Instrucoes completas em `AGENTS.md`. Exemplos praticos em `GUIA-SKILLS.md`.
 
@@ -9,24 +9,39 @@ Todas as skills estao em `.agents/skills/` e funcionam localmente sem dependenci
 
 ## Regras para Claude Code
 
-1. Skills estao em `.agents/skills/` — carregue o `SKILL.md` antes de gerar codigo.
+1. Skills estao em `skills/<bucket>/<skill>/` — carregue o `SKILL.md` antes de gerar codigo.
 2. `code-quality` e `code-readability` sao transversais — aplicar SEMPRE.
 3. Consulte `GUIA-SKILLS.md` para exemplos praticos em portugues.
-4. Skills sao auto-contidas e nao dependem de fontes externas (Smithery, GitHub).
+4. Skills sao auto-contidas e nao dependem de fontes externas.
+5. Use `bash scripts/postinstall.sh` para gerar symlinks em `.claude/skills/`.
 
 ---
 
 ## Skills Disponiveis
 
-| Categoria | Skills |
-|-----------|--------|
-| Qualidade de Codigo | `code-quality`, `code-readability` |
-| Java Core & Padroes | `cui-java-core`, `java-pro` |
-| Spring Boot | `java-spring-boot`, `spring-boot-engineer`, `dr-jskill` |
-| Arquitetura Enterprise | `java-architect` |
-| Microservices | `java-microservices` |
-| Verificacao & CI/CD | `springboot-verification` |
-| Ferramentas | `smithery-ai-cli` |
+| Bucket | Skills |
+|--------|--------|
+| `core/` | `code-quality`, `code-readability` |
+| `java/` | `cui-java-core`, `java-pro` |
+| `spring-boot/` | `dr-jskill`, `java-spring-boot`, `spring-boot-engineer` |
+| `architecture/` | `java-architect`, `java-microservices` |
+| `verification/` | `springboot-verification` |
+| `tools/` | `smithery-ai-cli` |
+
+---
+
+## Instalacao
+
+```bash
+# Todas as skills
+npx skills add https://github.com/ViniHDSouza/skill-java
+
+# Um bucket especifico
+npx skills add ViniHDSouza/skill-java/skills/spring-boot
+
+# Uma skill especifica
+npx skills add ViniHDSouza/skill-java/skills/spring-boot --skill dr-jskill
+```
 
 ---
 
@@ -34,6 +49,6 @@ Todas as skills estao em `.agents/skills/` e funcionam localmente sem dependenci
 
 | Ferramenta | Arquivo de instrucoes | Skills |
 |------------|----------------------|--------|
-| Claude Code | `CLAUDE.md` (este) | `.agents/skills/` |
-| OpenCode | `AGENTS.md` | `.agents/skills/` |
-| VSCode | `.vscode/settings.json` | `.agents/skills/` |
+| Claude Code | `CLAUDE.md` (este) | `skills/` |
+| OpenCode | `AGENTS.md` | `skills/` |
+| VSCode | `.vscode/settings.json` | `skills/` |

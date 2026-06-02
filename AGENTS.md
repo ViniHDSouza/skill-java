@@ -12,7 +12,7 @@ Fonte: [github.com/ViniHDSouza/skill-java](https://github.com/ViniHDSouza/skill-
 
 ## Visão Geral
 
-Este repositório contém uma coleção de skills para desenvolvimento Java, focado principalmente no ecossistema Spring Boot e arquitetura enterprise. As skills estão organizadas no diretório `.agents/skills/`.
+Este repositório contém uma coleção de skills para desenvolvimento Java, focado principalmente no ecossistema Spring Boot e arquitetura enterprise. As skills estão organizadas em buckets dentro de `skills/<bucket>/<skill>/`.
 
 Cada skill possui um `SKILL.md` como ponto de entrada e, opcionalmente, diretórios `references/`, `standards/`, `assets/`, `scripts/` e `workshop/` com conteúdo complementar.
 
@@ -20,17 +20,16 @@ Cada skill possui um `SKILL.md` como ponto de entrada e, opcionalmente, diretór
 
 ## Índice de Skills
 
-### Categorias
+### Buckets
 
-| Categoria | Skills |
-|-----------|--------|
-| **Qualidade de Código** | `code-quality`, `code-readability` |
-| **Java Core & Padrões** | `cui-java-core`, `java-pro` |
-| **Spring Boot** | `java-spring-boot`, `spring-boot-engineer`, `dr-jskill` |
-| **Arquitetura Enterprise** | `java-architect` |
-| **Microservices** | `java-microservices` |
-| **Verificação & CI/CD** | `springboot-verification` |
-| **Ferramentas** | `smithery-ai-cli` |
+| Bucket | Skills |
+|--------|--------|
+| **core/** | `code-quality`, `code-readability` |
+| **java/** | `cui-java-core`, `java-pro` |
+| **spring-boot/** | `dr-jskill`, `java-spring-boot`, `spring-boot-engineer` |
+| **architecture/** | `java-architect`, `java-microservices` |
+| **verification/** | `springboot-verification` |
+| **tools/** | `smithery-ai-cli` |
 
 ---
 

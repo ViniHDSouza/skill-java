@@ -1,0 +1,53 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Code Quality",
+      "description": "Cross-cutting skills for code quality and readability — apply to any code change.",
+      "skills": [
+        "code-quality",
+        "code-readability"
+      ]
+    },
+    {
+      "title": "Java Core",
+      "description": "Core Java patterns, null safety, Lombok, modern features (Java 21+), and logging.",
+      "skills": [
+        "cui-java-core",
+        "java-pro"
+      ]
+    },
+    {
+      "title": "Spring Boot",
+      "description": "REST APIs, Security, Data JPA, Actuator, project generation, and advanced 3.x patterns.",
+      "skills": [
+        "dr-jskill",
+        "java-spring-boot",
+        "spring-boot-engineer"
+      ]
+    },
+    {
+      "title": "Architecture",
+      "description": "Enterprise architecture, DDD, reactive WebFlux, microservices, and cloud-native design.",
+      "skills": [
+        "java-architect",
+        "java-microservices"
+      ]
+    },
+    {
+      "title": "CI/CD & Verification",
+      "description": "Build verification, static analysis, test coverage, and security scans before PR.",
+      "skills": [
+        "springboot-verification"
+      ]
+    },
+    {
+      "title": "Tools",
+      "description": "MCP tool discovery and connection via Smithery CLI.",
+      "skills": [
+        "smithery-ai-cli"
+      ]
+    }
+  ]
+}

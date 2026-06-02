@@ -10,13 +10,13 @@ As skills estão configuradas para funcionar **localmente** (sem dependências e
 
 | Ferramenta | Arquivo de instruções | Skills | Config adicional |
 |------------|----------------------|--------|-----------------|
-| **Claude Code** | `CLAUDE.md` | `.agents/skills/` | — |
-| **OpenCode** | `AGENTS.md` | `.agents/skills/` | `.opencode/opencode.jsonc` |
-| **VSCode** | `.vscode/settings.json` | `.agents/skills/` (via extensões AI) | `.vscode/extensions.json` |
+| **Claude Code** | `CLAUDE.md` | `skills/` | — |
+| **OpenCode** | `AGENTS.md` | `skills/` | `.opencode/opencode.jsonc` |
+| **VSCode** | `.vscode/settings.json` | `skills/` (via extensões AI) | `.vscode/extensions.json` |
 
 ### Como cada ferramenta carrega as skills
 
-- **Claude Code**: Lê `CLAUDE.md` ao iniciar no diretório e carrega skills de `.agents/skills/`.
+- **Claude Code**: Lê `CLAUDE.md` ao iniciar no diretório e carrega skills de `skills/`.
 - **OpenCode**: Lê `AGENTS.md` + `.opencode/opencode.jsonc` e carrega skills do diretório configurado (`mode: local-only`).
 - **VSCode**: Extensões como GitHub Copilot e Continue leem instruções do workspace (`.vscode/`, `.github/copilot-instructions.md`) e podem referenciar skills locais.
 
@@ -27,19 +27,28 @@ java-dia-dia/
 ├── AGENTS.md              # Instruções principais (OpenCode)
 ├── CLAUDE.md              # Instruções Claude Code
 ├── GUIA-SKILLS.md         # Este guia
-├── skills-lock.json       # Lock file com hashes + plataformas
-├── .agents/skills/        # Skills (11 skills)
-│   ├── code-quality/
-│   ├── code-readability/
-│   ├── cui-java-core/
-│   ├── dr-jskill/
-│   ├── java-architect/
-│   ├── java-microservices/
-│   ├── java-pro/
-│   ├── java-spring-boot/
-│   ├── smithery-ai-cli/
-│   ├── spring-boot-engineer/
-│   └── springboot-verification/
+├── skills-lock.json       # Lock file com hashes (skills externas)
+├── skills.sh.json         # Configuração skills.sh
+├── scripts/
+│   └── postinstall.sh     # Gera symlinks em .claude/skills/ e .agents/skills/
+├── skills/                # 11 skills em 6 buckets
+│   ├── core/
+│   │   ├── code-quality/
+│   │   └── code-readability/
+│   ├── java/
+│   │   ├── cui-java-core/
+│   │   └── java-pro/
+│   ├── spring-boot/
+│   │   ├── dr-jskill/
+│   │   ├── java-spring-boot/
+│   │   └── spring-boot-engineer/
+│   ├── architecture/
+│   │   ├── java-architect/
+│   │   └── java-microservices/
+│   ├── verification/
+│   │   └── springboot-verification/
+│   └── tools/
+│       └── smithery-ai-cli/
 ├── .opencode/
 │   └── opencode.jsonc     # Config OpenCode (local-only)
 └── .vscode/
