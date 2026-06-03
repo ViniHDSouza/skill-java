@@ -1,5 +1,5 @@
 ---
-name: cui-java-core
+name: "cui-java-core/Java Core CUI"
 description: Core Java development standards for CUI projects including coding patterns, null safety, Lombok, modern features, and logging
 allowed-tools: [Read, Edit, Write, Bash, Grep, Glob]
 platforms: [claude, opencode, vscode]

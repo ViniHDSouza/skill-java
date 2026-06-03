@@ -1,5 +1,5 @@
 ---
-name: java-spring-boot
+name: "java-spring-boot/Spring Boot"
 description: Build production Spring Boot applications - REST APIs, Security, Data, Actuator
 platforms: [claude, opencode, vscode]
 sasmp_version: "1.3.0"

@@ -1,5 +1,5 @@
 ---
-name: java-microservices
+name: "java-microservices/Microsserviços Java"
 description: Build microservices - Spring Cloud, service mesh, event-driven, resilience patterns
 platforms: [claude, opencode, vscode]
 sasmp_version: "1.3.0"

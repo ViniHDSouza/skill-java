@@ -1,5 +1,5 @@
 ---
-name: springboot-verification
+name: "springboot-verification/Verificação Spring Boot"
 description: Verification loop for Spring Boot projects: build, static analysis, tests with coverage, security scans, and diff review before release or PR.
 allowed-tools: [Bash, Read, Grep]
 

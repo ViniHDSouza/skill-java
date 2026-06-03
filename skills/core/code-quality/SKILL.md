@@ -1,5 +1,5 @@
 ---
-name: code-quality
+name: "code-quality/Qualidade de Código"
 description: Code quality guidelines. ALWAYS use skill for ANY code changes.
 allowed-tools: [Read, Edit, Write, Grep, Glob]
 platforms: [claude, opencode, vscode]

@@ -1,5 +1,5 @@
 ---
-name: code-readability
+name: "code-readability/Legibilidade de Código"
 description: Writing clean, understandable, and self-documenting code that is easy to review and maintain over time.
 version: '1.0'
 allowed-tools: [Read, Edit, Write, Grep, Glob]
